@@ -2,7 +2,7 @@
 
 - **Role:** AI Software Engineer
 - **Project:** RL_Environment — Pi agent memory, then Policy Decompilation for Optimus
-- **Repository:** 
+- **Repository:** https://github.com/nikbearbrown/humanitarians-youtube/tree/main/fellows/maitri-p
 - **GitHub:** [@maitripasale](https://github.com/maitripasale)
 - **Supervisors:** Dev Shah, Dhruv Patel, Shilpa V G
 - **Agreement period:** 11 Sep — 31 Oct 2026
