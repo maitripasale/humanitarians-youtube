@@ -22,11 +22,12 @@ readable rules.
 
 | Week | Work | Result | Evidence | Log |
 |---|---|---|---|---|
-| [21–27 Sep](./2026-09-21-pi-week1-onboarding/) | How Pi works | Mapped Pi's prompt → tool → result loop and where memory could fit; added a Jupyter tool so Pi can run Python. | [drive](https://drive.google.com/drive/folders/1mainiFrl4-LOSw0kgNHxgwPRx3mCKdC_) · [code](https://github.com/maitripasale/pi-memory-search/blob/main/extensions/jupyter-repl.ts) | [log](./2026-09-21-pi-week1-onboarding/FRICTIONAL.md) |
-| [28 Sep – 4 Oct](./2026-10-03-pi-agent-memory/) | Memory systems | Scoped two memory types — procedural (how to do it) and metacognitive (what went wrong) — and how to evaluate them. | [drive](https://drive.google.com/drive/folders/18lEGqobYIRiYHgXF4oMB68NmZFddJH3V) · [code](https://github.com/maitripasale/pi-memory-search/blob/main/search_research/memory.py) | [log](./2026-10-03-pi-agent-memory/FRICTIONAL.md) |
-| [5–11 Oct](./2026-10-09-pi-memory-pilot/) | Memory pilot | 3 practice → 6 unseen questions, four conditions. All answers correct; mean tool calls 6.00 / 4.33 / 5.00 / 6.83. Fixed a scoring bug across all conditions. | [drive](https://drive.google.com/drive/folders/1OIblBvPv67TWI_ix_2MRl98TlqTI9bzN) · [report](https://github.com/maitripasale/pi-memory-search/blob/main/search_research/MULTIHOP_EXPERIMENT.md) | [log](./2026-10-09-pi-memory-pilot/FRICTIONAL.md) |
-| [12–18 Oct](./2026-10-23-pi-memory-task-review/) | Task-level review | One hard task (12 calls, 2 errors → 3 calls with memory) drove most of the gain. Retrieving a lesson at the right time matters as much as storing it. | [drive](https://drive.google.com/drive/folders/1UO2dYgzjzEDvV-CASwsnMpC9BqfFAqqt) · [analysis](https://github.com/maitripasale/pi-memory-search/blob/main/search_research/WEEK3_ANALYSIS.md) | [log](./2026-10-23-pi-memory-task-review/FRICTIONAL.md) |
-| [19–25 Oct](./2026-10-23-policy-decompilation-scope/) | Policy Decompilation scope | Chose first measures: action agreement, task performance, rule simplicity. Scoping only — no model trained yet. | [drive](https://drive.google.com/drive/folders/1pJitpxHlOK22vwyq9DDNVPpdGVnMnJp3) | [log](./2026-10-23-policy-decompilation-scope/FRICTIONAL.md) |
+| [21–27 Sep](./2026-09-21-project-pi-week1-onboarding/) | How Pi works | Mapped Pi's prompt → tool → result loop and where memory could fit; added a Jupyter tool so Pi can run Python. | [drive](https://drive.google.com/drive/folders/1mainiFrl4-LOSw0kgNHxgwPRx3mCKdC_) · [code](https://github.com/maitripasale/pi-memory-search/blob/main/extensions/jupyter-repl.ts) | [log](./2026-09-21-project-pi-week1-onboarding/FRICTIONAL.md) |
+| [28 Sep – 4 Oct](./2026-09-28-project-pi-agent-memory/) | Memory systems | Scoped two memory types — procedural (how to do it) and metacognitive (what went wrong) — and how to evaluate them. | [drive](https://drive.google.com/drive/folders/18lEGqobYIRiYHgXF4oMB68NmZFddJH3V) · [code](https://github.com/maitripasale/pi-memory-search/blob/main/search_research/memory.py) | [log](./2026-09-28-project-pi-agent-memory/FRICTIONAL.md) |
+| [5–11 Oct](./2026-10-05-project-pi-memory-pilot/) | Memory pilot | 3 practice → 6 unseen questions, four conditions. All answers correct; mean tool calls 6.00 / 4.33 / 5.00 / 6.83. Fixed a scoring bug across all conditions. | [drive](https://drive.google.com/drive/folders/1OIblBvPv67TWI_ix_2MRl98TlqTI9bzN) · [report](https://github.com/maitripasale/pi-memory-search/blob/main/search_research/MULTIHOP_EXPERIMENT.md) | [log](./2026-10-05-project-pi-memory-pilot/FRICTIONAL.md) |
+| [12–18 Oct](./2026-10-12-project-pi-memory-task-review/) | Task-level review | One hard task (12 calls, 2 errors → 3 calls with memory) drove most of the gain. Retrieving a lesson at the right time matters as much as storing it. | [drive](https://drive.google.com/drive/folders/1UO2dYgzjzEDvV-CASwsnMpC9BqfFAqqt) · [analysis](https://github.com/maitripasale/pi-memory-search/blob/main/search_research/WEEK3_ANALYSIS.md) | [log](./2026-10-12-project-pi-memory-task-review/FRICTIONAL.md) |
+| [19–25 Oct](./2026-10-19-project-policy-decompilation-scope/) | Policy Decompilation scope | Chose first measures: action agreement, task performance, rule simplicity. Scoping only — no model trained yet. | [drive](https://drive.google.com/drive/folders/1pJitpxHlOK22vwyq9DDNVPpdGVnMnJp3) | [log](./2026-10-19-project-policy-decompilation-scope/FRICTIONAL.md) |
+| [2–8 Nov](./2026-11-02-project-policy-decompilation-cartpole/) | Policy Decompilation on CartPole | Trained agent (477.99 / 500) → if/else code → hand-built network. Code and rebuilt network identical on 10,000 / 10,000 steps; 95.91% same move as the original on 100 unseen games. Full match: 0 of 100 games yet. | drive pending | [log](./2026-11-02-project-policy-decompilation-cartpole/FRICTIONAL.md) |
 
 **One repetition per condition** — the pilot numbers are early signals, not a proven improvement.
 
@@ -34,11 +35,12 @@ readable rules.
 
 | Week | Topic | Evidence | Log |
 |---|---|---|---|
-| [21–27 Sep](./2026-10-23-noise-cancelling-headphones/) | Noise cancellation | [drive](https://drive.google.com/drive/folders/1mainiFrl4-LOSw0kgNHxgwPRx3mCKdC_) | [log](./2026-10-23-noise-cancelling-headphones/FRICTIONAL.md) |
-| [28 Sep – 4 Oct](./2026-10-02-agents-use-tools/) | How agents use tools | [drive](https://drive.google.com/drive/folders/18lEGqobYIRiYHgXF4oMB68NmZFddJH3V) | [log](./2026-10-02-agents-use-tools/FRICTIONAL.md) |
-| [5–11 Oct](./2026-10-23-dynamodb-hot-partition/) | DynamoDB hot partitions | [drive](https://drive.google.com/drive/folders/1OIblBvPv67TWI_ix_2MRl98TlqTI9bzN) | [log](./2026-10-23-dynamodb-hot-partition/FRICTIONAL.md) |
-| [12–18 Oct](./2026-10-23-lambda-cold-start/) | AWS Lambda cold starts | [drive](https://drive.google.com/drive/folders/1UO2dYgzjzEDvV-CASwsnMpC9BqfFAqqt) | [log](./2026-10-23-lambda-cold-start/FRICTIONAL.md) |
-| [19–25 Oct](./2026-10-23-gps-how-it-works/) | How GPS works | [drive](https://drive.google.com/drive/folders/1pJitpxHlOK22vwyq9DDNVPpdGVnMnJp3) | [log](./2026-10-23-gps-how-it-works/FRICTIONAL.md) |
+| [21–27 Sep](./2026-09-21-noise-cancelling-headphones/) | Noise cancellation | [drive](https://drive.google.com/drive/folders/1mainiFrl4-LOSw0kgNHxgwPRx3mCKdC_) | [log](./2026-09-21-noise-cancelling-headphones/FRICTIONAL.md) |
+| [28 Sep – 4 Oct](./2026-09-28-agents-use-tools/) | How agents use tools | [drive](https://drive.google.com/drive/folders/18lEGqobYIRiYHgXF4oMB68NmZFddJH3V) | [log](./2026-09-28-agents-use-tools/FRICTIONAL.md) |
+| [5–11 Oct](./2026-10-05-dynamodb-hot-partition/) | DynamoDB hot partitions | [drive](https://drive.google.com/drive/folders/1OIblBvPv67TWI_ix_2MRl98TlqTI9bzN) | [log](./2026-10-05-dynamodb-hot-partition/FRICTIONAL.md) |
+| [12–18 Oct](./2026-10-12-lambda-cold-start/) | AWS Lambda cold starts | [drive](https://drive.google.com/drive/folders/1UO2dYgzjzEDvV-CASwsnMpC9BqfFAqqt) | [log](./2026-10-12-lambda-cold-start/FRICTIONAL.md) |
+| [19–25 Oct](./2026-10-19-gps-how-it-works/) | How GPS works | [drive](https://drive.google.com/drive/folders/1pJitpxHlOK22vwyq9DDNVPpdGVnMnJp3) | [log](./2026-10-19-gps-how-it-works/FRICTIONAL.md) |
+| [2–8 Nov](./2026-11-02-ai-energy-footprint/) | AI's energy footprint | drive pending | [log](./2026-11-02-ai-energy-footprint/FRICTIONAL.md) |
 
 ## Next steps
 
@@ -50,4 +52,4 @@ readable rules.
 ## Hours and renewal
 
 - [Weekly hours](HOURS.md)
-- [Renewal request](./renewal-requests/2026-10-23-renewal-request.md)
+- [Renewal request](./renewal-requests/Renewal-Request.md)

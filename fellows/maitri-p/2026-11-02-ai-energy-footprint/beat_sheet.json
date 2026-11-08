@@ -1,0 +1,316 @@
+{
+  "metadata": {
+    "title": "How Much Power Does AI Use?",
+    "slug": "ai-energy-footprint",
+    "topic": "Irreducibly Human",
+    "register": "Plain",
+    "brand": "claude-hai",
+    "kind": "stem-explainer",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "greeting": "Ciao, HAI",
+    "folderLabel": "@HumanitariansAI",
+    "presenter": "Maitri",
+    "audience": "General audience, no science background",
+    "required_intro": "Hi, I am Maitri and this video is about AI's energy footprint.",
+    "ai_disclosure": "Narration is Kokoro af_bella (Bella), a local synthetic voice.",
+    "aspects": [
+      "16:9",
+      "9:16"
+    ]
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "ASK",
+      "narration_text": "Hi, I am Maitri and this video is about AI's energy footprint. Every answer uses electricity. So how much is it, really?",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Ciao, HAI",
+            "topic": "Irreducibly Human",
+            "segment": "AI's Energy Footprint",
+            "command": "How much electricity does AI actually use?",
+            "runningText": "counting the watts…",
+            "folderLabel": "@HumanitariansAI",
+            "output": [
+              "one answer: tiny",
+              "billions of answers: not tiny"
+            ]
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-11-07T22:47:39.850075+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 8,
+      "actual_duration_s": 8.13,
+      "audio_file": "mp3/beat-B00.mp3"
+    },
+    {
+      "beat_id": "B01",
+      "act": "TWO PLACES",
+      "narration_text": "AI uses energy in two places. Training, a one-off cost for each model. And inference, every time someone asks it something.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "AgentToolLoop",
+          "props": {
+            "stages": [
+              "TRAINING · ONCE",
+              "INFERENCE · EVERY ANSWER"
+            ],
+            "executeIndex": 1,
+            "loopBack": false,
+            "ports": [],
+            "sparkLine": "Built once, used billions of times."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-11-07T22:48:39.432086+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.05,
+            "event": "training, then inference"
+          }
+        ]
+      },
+      "estimated_duration_s": 8,
+      "actual_duration_s": 8.7,
+      "audio_file": "mp3/beat-B01.mp3"
+    },
+    {
+      "beat_id": "B02",
+      "act": "TRAINING",
+      "narration_text": "Training GPT-3 ran ten thousand GPUs for about fifteen days, using around 1,287 megawatt-hours of electricity.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt",
+          "props": {
+            "header": "Training GPT-3",
+            "subheader": "· a one-off cost",
+            "rows": [
+              {
+                "tag": "CHIPS",
+                "text": "10,000 GPUs for 14.8 days"
+              },
+              {
+                "tag": "ENERGY",
+                "text": "about 1,287 MWh",
+                "emphasis": true
+              },
+              {
+                "tag": "EMISSIONS",
+                "text": "about 552 tonnes CO₂e"
+              }
+            ],
+            "footer": "Source: Patterson et al., Google / UC Berkeley, 2021",
+            "sparkLine": "Big, but only once."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-11-07T22:49:40.365226+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 10,
+      "actual_duration_s": 10.71,
+      "audio_file": "mp3/beat-B02.mp3"
+    },
+    {
+      "beat_id": "B03",
+      "act": "INFERENCE",
+      "narration_text": "One answer is tiny. Google says a median Gemini text prompt uses 0.24 watt-hours, less than nine seconds of TV. That's Google's own figure, and images, video, and long reasoning cost more.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt",
+          "props": {
+            "header": "One text prompt",
+            "subheader": "· Gemini, median",
+            "rows": [
+              {
+                "tag": "ENERGY",
+                "text": "0.24 Wh · under 9 seconds of TV",
+                "emphasis": true
+              },
+              {
+                "tag": "CARBON",
+                "text": "about 0.03 g CO₂e"
+              },
+              {
+                "tag": "WATER",
+                "text": "0.26 mL · about five drops"
+              }
+            ],
+            "footer": "Google's own figures (Aug 2025) · images, video, reasoning cost more",
+            "sparkLine": "Tiny, one at a time."
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-11-07T22:50:43.352733+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 13,
+      "actual_duration_s": 14.42,
+      "audio_file": "mp3/beat-B03.mp3"
+    },
+    {
+      "beat_id": "B04",
+      "act": "SCALE",
+      "narration_text": "The catch is scale: billions of prompts a day. Data centres used about 415 terawatt-hours in 2024, one and a half percent of world electricity. The IEA projects 945 by 2030, driven mainly by AI.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "EvidenceBars",
+          "props": {
+            "title": "Data-centre electricity (TWh)",
+            "note": "2024 ≈ 1.5% of world electricity",
+            "bars": [
+              {
+                "label": "2024",
+                "value": 415,
+                "display": "415"
+              },
+              {
+                "label": "2030 (projected)",
+                "value": 945,
+                "display": "945"
+              }
+            ],
+            "accentIndex": 1,
+            "caption": "All data centres, not only AI · IEA, 2025",
+            "sparkLine": "More than double by 2030."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-11-07T22:51:47.640047+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 15,
+      "actual_duration_s": 17.51,
+      "audio_file": "mp3/beat-B04.mp3"
+    },
+    {
+      "beat_id": "B05",
+      "act": "CUT IT",
+      "narration_text": "How to cut it: use smaller or distilled models, store their numbers with fewer bits, run on chips and data centres built for efficiency, when the grid is greenest. And don't use the biggest model when a small one will do.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt",
+          "props": {
+            "header": "How to cut it",
+            "subheader": "· general techniques",
+            "rows": [
+              {
+                "tag": "SMALLER",
+                "text": "small or distilled models when good enough",
+                "emphasis": true
+              },
+              {
+                "tag": "FEWER BITS",
+                "text": "quantization: less maths and memory"
+              },
+              {
+                "tag": "HARDWARE",
+                "text": "AI chips and efficient data centres"
+              },
+              {
+                "tag": "CLEANER",
+                "text": "run where and when the grid is greenest"
+              }
+            ],
+            "footer": "Not every task needs the biggest model",
+            "sparkLine": "Right-size the model."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-11-07T22:52:53.418836+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 14,
+      "actual_duration_s": 13.53,
+      "audio_file": "mp3/beat-B05.mp3"
+    },
+    {
+      "beat_id": "B06",
+      "act": "HANDOFF",
+      "narration_text": "Your turn. Paste this into Claude: estimate the energy of my AI use this week, and tell me which habits would cut it the most.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "Irreducibly Human",
+            "segment": "Try This",
+            "command": "Estimate the energy of my AI use this week, and tell me which habits would cut it the most.",
+            "runningText": "paste this into Claude…",
+            "folderLabel": "@HumanitariansAI",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-11-07T22:55:15.994668+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 8,
+      "actual_duration_s": 7.83,
+      "audio_file": "mp3/beat-B06.mp3"
+    },
+    {
+      "beat_id": "B07",
+      "act": "OUTRO",
+      "narration_text": "How Much Power Does AI Use? At Humanitarians A I.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "How Much Power Does AI Use?",
+            "slug": "ai-energy-footprint",
+            "handle": "@HumanitariansAI",
+            "subline": "Narrated by Kokoro (Bella) — a synthetic voice."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-11-07T22:56:00.890984+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 4,
+      "actual_duration_s": 3.52,
+      "audio_file": "mp3/beat-B07.mp3"
+    }
+  ]
+}

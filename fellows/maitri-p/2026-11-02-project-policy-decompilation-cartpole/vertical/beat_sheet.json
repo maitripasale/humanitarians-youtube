@@ -1,0 +1,495 @@
+{
+  "metadata": {
+    "title": "Can a Network Become Code?",
+    "slug": "policy-decompilation-cartpole-vertical",
+    "topic": "Irreducibly Human",
+    "register": "Plain",
+    "brand": "claude-hai",
+    "kind": "vertical",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "greeting": "Hej, HAI",
+    "folderLabel": "@HumanitariansAI",
+    "presenter": "Maitri",
+    "audience": "PM, fellows, early-career engineers",
+    "work_period": "week of 2026-11-02",
+    "ai_disclosure": "Narration is Kokoro af_bella (Bella), a local synthetic voice.",
+    "aspects": [
+      "16:9",
+      "9:16"
+    ],
+    "build": {
+      "at": "2026-11-07T17:15:56",
+      "cut": "master",
+      "filled": 10,
+      "of": 10,
+      "slates": [],
+      "skin_warnings": [
+        "B00: palette=claude but the cold open is 'ClaudeComposerAsk916' — COLD OPEN LAW wants ClaudeComposerAsk",
+        "B09: palette=claude but the outro is 'ClaudeTitleOutro916' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    },
+    "aspect_ratio": "9:16",
+    "fit": "pad",
+    "reformat": "full-length; native portrait graphics; preserve source framing",
+    "derived_from": "policy-decompilation-cartpole",
+    "dropped_beats": [],
+    "total_estimated_duration_seconds": 103.25,
+    "short_validation": {
+      "status": "ready",
+      "errors": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "ASK",
+      "narration_text": "Hi, I am Maitri. This week I turned a trained agent's decisions into readable code, rebuilt a network from it, and checked if it plays the same.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk916",
+          "props": {
+            "greeting": "Hej, HAI",
+            "topic": "Irreducibly Human",
+            "segment": "Policy Decompilation",
+            "command": "Can a trained agent's decisions become readable code?",
+            "runningText": "decompiling the policy…",
+            "folderLabel": "@HumanitariansAI",
+            "output": [
+              "network → if/else code → network",
+              "first results on CartPole"
+            ]
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-11-07T23:00:26.164072+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 11,
+      "actual_duration_s": 9.17,
+      "audio_file": "mp3/beat-B00.mp3",
+      "render_duration_s": 9.208333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B00.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk916",
+        "at": "2026-11-07T17:15:56"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "IDEA",
+      "narration_text": "The tool has five steps: train an agent, record what happens inside it, turn its decisions into if-else code, rebuild a network from that code, and verify it against the original.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "AgentToolLoop916",
+          "props": {
+            "stages": [
+              "TRAIN",
+              "RECORD",
+              "DECOMPILE",
+              "REBUILD",
+              "VERIFY"
+            ],
+            "executeIndex": 2,
+            "loopBack": false,
+            "ports": [],
+            "sparkLine": "Network to code, and back."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-11-07T23:01:32.064055+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.05,
+            "event": "stages light in narration order"
+          }
+        ]
+      },
+      "estimated_duration_s": 11,
+      "actual_duration_s": 11.33,
+      "audio_file": "mp3/beat-B01.mp3",
+      "render_duration_s": 11.333333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B01.mp4",
+        "filled_by": "remotion:AgentToolLoop916",
+        "at": "2026-11-07T17:15:56"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "AGENT",
+      "narration_text": "The agent is a small network, 234 parameters, trained on CartPole. It scores about 478 out of 500. I recorded 30 games with every neuron's value.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt916",
+          "props": {
+            "header": "The agent",
+            "subheader": "· CartPole",
+            "rows": [
+              {
+                "tag": "NETWORK",
+                "text": "2 hidden layers (16 + 8) · 234 parameters"
+              },
+              {
+                "tag": "SCORE",
+                "text": "477.99 / 500 over 100 unseen games",
+                "emphasis": true
+              },
+              {
+                "tag": "RECORDED",
+                "text": "30 games · 14,916 steps · all 24 neurons"
+              }
+            ],
+            "footer": "Trained with policy gradient (learning from reward)",
+            "sparkLine": "Small, and good at the game."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-11-07T23:02:38.324766+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 13,
+      "actual_duration_s": 12.71,
+      "audio_file": "mp3/beat-B02.mp3",
+      "render_duration_s": 12.75,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B02.mp4",
+        "filled_by": "remotion:LessonExcerpt916",
+        "at": "2026-11-07T17:15:56"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "NEURONS",
+      "narration_text": "Mapping the neurons showed a clear pair. One fires for push right, another for push left. They work as opposites, like a gas and a brake pedal.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt916",
+          "props": {
+            "header": "Inside the network",
+            "subheader": "· neuron correlations",
+            "rows": [
+              {
+                "tag": "L2_N3",
+                "text": "fires for PUSH RIGHT · correlation 0.81",
+                "emphasis": true
+              },
+              {
+                "tag": "L2_N6",
+                "text": "fires for PUSH LEFT · correlation −0.80"
+              },
+              {
+                "tag": "TOGETHER",
+                "text": "opposites, like gas and brake"
+              }
+            ],
+            "footer": "From 14,916 recorded steps",
+            "sparkLine": "A gas and a brake."
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-11-07T23:03:42.304337+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 9,
+      "actual_duration_s": 9.3,
+      "audio_file": "mp3/beat-B03.mp3",
+      "render_duration_s": 9.333333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B03.mp4",
+        "filled_by": "remotion:LessonExcerpt916",
+        "at": "2026-11-07T17:15:56"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "DECOMPILE",
+      "narration_text": "Then I fitted short if-else code to its behaviour. Just 47 nodes of code makes the same move 92.8 percent of the time. 191 nodes reaches 97.8.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "EvidenceBars916",
+          "props": {
+            "title": "Same move as the agent",
+            "note": "Code size in AST nodes (smaller = simpler)",
+            "bars": [
+              {
+                "label": "47 nodes",
+                "value": 92.8,
+                "display": "92.8%"
+              },
+              {
+                "label": "65 nodes",
+                "value": 96.2,
+                "display": "96.2%"
+              },
+              {
+                "label": "115 nodes",
+                "value": 96.7,
+                "display": "96.7%"
+              },
+              {
+                "label": "191 nodes",
+                "value": 97.8,
+                "display": "97.8%"
+              }
+            ],
+            "accentIndex": 0,
+            "caption": "Tree depth 2, 3, 4, 6 · on recorded games",
+            "sparkLine": "Short code, close match."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-11-07T23:04:49.659954+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 10,
+      "actual_duration_s": 12.63,
+      "audio_file": "mp3/beat-B04.mp3",
+      "render_duration_s": 12.666666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B04.mp4",
+        "filled_by": "remotion:EvidenceBars916",
+        "at": "2026-11-07T17:15:56"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "VERIFY",
+      "narration_text": "From that code I set network weights by hand, no training. It matches the code exactly. On unseen games it makes the original's move about 96 percent of the time, and scores 485 against 478.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt916",
+          "props": {
+            "header": "Rebuilt and tested",
+            "subheader": "· 73-node version",
+            "rows": [
+              {
+                "tag": "CODE = NETWORK",
+                "text": "10,000 / 10,000 steps identical",
+                "emphasis": true
+              },
+              {
+                "tag": "SAME MOVE",
+                "text": "95.91% of 47,799 unseen steps"
+              },
+              {
+                "tag": "SCORE",
+                "text": "rebuilt 484.67 · original 477.99"
+              }
+            ],
+            "footer": "Weights set by hand from the rules, no training",
+            "sparkLine": "Code becomes a network again."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-11-07T23:05:58.855379+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 15,
+      "actual_duration_s": 15.21,
+      "audio_file": "mp3/beat-B05.mp3",
+      "render_duration_s": 15.25,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B05.mp4",
+        "filled_by": "remotion:LessonExcerpt916",
+        "at": "2026-11-07T17:15:56"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "LIMITS",
+      "narration_text": "Not done yet: no game matches the original at every step, which is the goal. The rules come from behaviour, not neurons, and it's only CartPole so far.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt916",
+          "props": {
+            "header": "Not done yet",
+            "subheader": "· said plainly",
+            "rows": [
+              {
+                "tag": "FULL MATCH",
+                "text": "0 of 100 games match at every step",
+                "emphasis": true
+              },
+              {
+                "tag": "RULES",
+                "text": "fitted from behaviour, not neurons"
+              },
+              {
+                "tag": "SCOPE",
+                "text": "CartPole only · no VIPER or LLM baseline"
+              }
+            ],
+            "footer": "19 tests passing · CLI · live dashboard",
+            "sparkLine": "Close is not the same."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-11-07T23:07:07.295277+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 13,
+      "actual_duration_s": 10.01,
+      "audio_file": "mp3/beat-B06.mp3",
+      "render_duration_s": 10.041666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B06.mp4",
+        "filled_by": "remotion:LessonExcerpt916",
+        "at": "2026-11-07T17:15:56"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "NEXT",
+      "narration_text": "Next week: build the rules from the neuron activations to push toward a full match, then run the same tool on MountainCar and MiniGrid.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "AgentToolLoop916",
+          "props": {
+            "stages": [
+              "RULES FROM NEURONS",
+              "100% MATCH",
+              "MOUNTAINCAR",
+              "MINIGRID"
+            ],
+            "executeIndex": 0,
+            "loopBack": false,
+            "ports": [],
+            "sparkLine": "From close to exact."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-11-07T23:08:10.612540+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.05,
+            "event": "next steps light in order"
+          }
+        ]
+      },
+      "estimated_duration_s": 9,
+      "actual_duration_s": 8.55,
+      "audio_file": "mp3/beat-B07.mp3",
+      "render_duration_s": 8.583333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B07.mp4",
+        "filled_by": "remotion:AgentToolLoop916",
+        "at": "2026-11-07T17:15:56"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "HANDOFF",
+      "narration_text": "Your turn. Paste this into Claude: write a short if-else rule for balancing a pole on a cart, then explain how you would test whether it makes the same moves as a trained agent.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk916",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "Irreducibly Human",
+            "segment": "Try This",
+            "command": "Write a short if-else rule for balancing a pole on a cart, then explain how you would test whether it makes the same moves as a trained agent.",
+            "runningText": "paste this into Claude…",
+            "folderLabel": "@HumanitariansAI",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": "2026-11-07T23:09:40.615579+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 11,
+      "actual_duration_s": 10.67,
+      "audio_file": "mp3/beat-B08.mp3",
+      "render_duration_s": 10.708333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B08.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk916",
+        "at": "2026-11-07T17:15:56"
+      }
+    },
+    {
+      "beat_id": "B09",
+      "act": "OUTRO",
+      "narration_text": "Can a Network Become Code? At Humanitarians A I.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro916",
+          "props": {
+            "title": "Can a Network Become Code?",
+            "slug": "policy-decompilation-cartpole",
+            "handle": "@HumanitariansAI",
+            "subline": "Narrated by Kokoro (Bella) — a synthetic voice."
+          },
+          "rendered": {
+            "out": "media/B09.mp4",
+            "at": "2026-11-07T23:10:21.358895+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 4,
+      "actual_duration_s": 3.35,
+      "audio_file": "mp3/beat-B09.mp3",
+      "render_duration_s": 3.375,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B09.mp4",
+        "filled_by": "remotion:ClaudeTitleOutro916",
+        "at": "2026-11-07T17:15:56"
+      }
+    }
+  ]
+}
