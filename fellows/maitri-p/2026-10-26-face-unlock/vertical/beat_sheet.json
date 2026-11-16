@@ -1,0 +1,393 @@
+{
+  "metadata": {
+    "title": "Your Face, as Numbers",
+    "slug": "face-unlock-vertical",
+    "topic": "Irreducibly Human",
+    "register": "Plain",
+    "brand": "claude-hai",
+    "kind": "vertical",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "greeting": "Ciao, HAI",
+    "folderLabel": "@HumanitariansAI",
+    "presenter": "Maitri",
+    "audience": "General audience, no engineering background",
+    "required_intro": "Hi, I am Maitri and this video is about how your phone recognizes your face.",
+    "ai_disclosure": "Narration is Kokoro af_bella (Bella), a local synthetic voice.",
+    "aspects": [
+      "16:9",
+      "9:16"
+    ],
+    "build": {
+      "at": "2026-11-15T17:01:37",
+      "cut": "master",
+      "filled": 8,
+      "of": 8,
+      "slates": [],
+      "skin_warnings": [
+        "B00: palette=claude but the cold open is 'ClaudeComposerAsk916' — COLD OPEN LAW wants ClaudeComposerAsk",
+        "B07: palette=claude but the outro is 'ClaudeTitleOutro916' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    },
+    "aspect_ratio": "9:16",
+    "fit": "pad",
+    "reformat": "full-length; native portrait graphics; preserve source framing",
+    "derived_from": "face-unlock",
+    "dropped_beats": [],
+    "total_estimated_duration_seconds": 78.96,
+    "short_validation": {
+      "status": "ready",
+      "errors": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "ASK",
+      "narration_text": "Hi, I am Maitri and this video is about how your phone recognizes your face. Surprisingly, it doesn't store your photo.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk916",
+          "props": {
+            "greeting": "Ciao, HAI",
+            "topic": "Irreducibly Human",
+            "segment": "Face Unlock",
+            "command": "How does my phone recognize my face?",
+            "runningText": "scanning…",
+            "folderLabel": "@HumanitariansAI",
+            "output": [
+              "not a photo",
+              "a list of numbers"
+            ]
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-11-15T22:52:46.791688+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 7,
+      "actual_duration_s": 7.81,
+      "audio_file": "mp3/beat-B00.mp3",
+      "render_duration_s": 7.833333333333333,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B00.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk916",
+        "at": "2026-11-15T17:01:37"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "CAPTURE",
+      "narration_text": "Face ID shines over thirty thousand invisible infrared dots on your face. A camera reads how they bend and builds a 3D depth map, so a flat photo won't work.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt916",
+          "props": {
+            "header": "Capture",
+            "subheader": "· Apple Face ID",
+            "rows": [
+              {
+                "tag": "DOT PROJECTOR",
+                "text": "30,000+ invisible infrared dots"
+              },
+              {
+                "tag": "IR CAMERA",
+                "text": "reads the dots → 3D depth map",
+                "emphasis": true
+              },
+              {
+                "tag": "FLOOD LIGHT",
+                "text": "infrared light, works in the dark"
+              }
+            ],
+            "footer": "A flat photo has no depth",
+            "sparkLine": "It measures shape, not looks."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-11-15T22:53:45.612647+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 10,
+      "actual_duration_s": 10.9,
+      "audio_file": "mp3/beat-B01.mp3",
+      "render_duration_s": 10.916666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B01.mp4",
+        "filled_by": "remotion:LessonExcerpt916",
+        "at": "2026-11-15T17:01:37"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "EMBEDDING",
+      "narration_text": "A neural network turns that scan into a long list of numbers. Similar faces give similar numbers. Each unlock compares a new list to the saved one, and if they're close enough, it opens.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "AgentToolLoop916",
+          "props": {
+            "stages": [
+              "SCAN",
+              "NUMBERS",
+              "COMPARE",
+              "UNLOCK"
+            ],
+            "executeIndex": 1,
+            "loopBack": false,
+            "ports": [],
+            "sparkLine": "Close numbers, same face."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-11-15T22:54:44.142406+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.05,
+            "event": "scan → numbers → compare → unlock"
+          }
+        ]
+      },
+      "estimated_duration_s": 12,
+      "actual_duration_s": 11.8,
+      "audio_file": "mp3/beat-B02.mp3",
+      "render_duration_s": 11.833333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B02.mp4",
+        "filled_by": "remotion:AgentToolLoop916",
+        "at": "2026-11-15T17:01:37"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "THRESHOLD",
+      "narration_text": "Where to draw that line is a trade-off: stricter keeps strangers out, but fails you more often. It also checks that your eyes are open, and adapts as your face changes.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt916",
+          "props": {
+            "header": "The threshold",
+            "subheader": "· how close is close enough",
+            "rows": [
+              {
+                "tag": "STRICTER",
+                "text": "fewer strangers get in · more fails for you",
+                "emphasis": true
+              },
+              {
+                "tag": "LOOSER",
+                "text": "easier for you · easier for others"
+              },
+              {
+                "tag": "ATTENTION",
+                "text": "eyes open and looking at the phone"
+              },
+              {
+                "tag": "ADAPTS",
+                "text": "follows beards, glasses, ageing"
+              }
+            ],
+            "footer": "",
+            "sparkLine": "A line someone has to draw."
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-11-15T22:55:43.819128+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 11,
+      "actual_duration_s": 10.69,
+      "audio_file": "mp3/beat-B03.mp3",
+      "render_duration_s": 10.708333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B03.mp4",
+        "filled_by": "remotion:LessonExcerpt916",
+        "at": "2026-11-15T17:01:37"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "PRIVACY",
+      "narration_text": "The face data stays encrypted on the phone, in the Secure Enclave. Apple says a random stranger has under a one-in-a-million chance, higher for twins and children under 13.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt916",
+          "props": {
+            "header": "Privacy and accuracy",
+            "subheader": "· Apple's figures",
+            "rows": [
+              {
+                "tag": "STORED",
+                "text": "Secure Enclave · on the phone, not iCloud"
+              },
+              {
+                "tag": "RANDOM MATCH",
+                "text": "under 1 in 1,000,000",
+                "emphasis": true
+              },
+              {
+                "tag": "HIGHER FOR",
+                "text": "twins, look-alike siblings, under 13"
+              }
+            ],
+            "footer": "Source: Apple, About Face ID advanced technology",
+            "sparkLine": "Private, and hard to fool."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-11-15T22:56:44.238836+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 11,
+      "actual_duration_s": 11.39,
+      "audio_file": "mp3/beat-B04.mp3",
+      "render_duration_s": 11.416666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B04.mp4",
+        "filled_by": "remotion:LessonExcerpt916",
+        "at": "2026-11-15T17:01:37"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "2D VS 3D",
+      "narration_text": "Not all phones work this way. Many Android phones use the ordinary front camera, and some can be fooled by a photo. 3D scans measure depth, so they're much harder to fool.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt916",
+          "props": {
+            "header": "Not all phones",
+            "subheader": "· 2D vs 3D",
+            "rows": [
+              {
+                "tag": "2D CAMERA",
+                "text": "convenient · some fooled by a photo"
+              },
+              {
+                "tag": "3D SCAN",
+                "text": "measures depth · much harder to fool",
+                "emphasis": true
+              }
+            ],
+            "footer": "Why many banking apps won't accept 2D face unlock",
+            "sparkLine": "Depth is the difference."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-11-15T22:57:43.014034+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 10,
+      "actual_duration_s": 11.33,
+      "audio_file": "mp3/beat-B05.mp3",
+      "render_duration_s": 11.333333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B05.mp4",
+        "filled_by": "remotion:LessonExcerpt916",
+        "at": "2026-11-15T17:01:37"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "HANDOFF",
+      "narration_text": "Your turn. Paste this into Claude: explain why a 3D face scan is harder to fool than a 2D photo match, and what trade-off a phone makes when it sets its unlock threshold.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk916",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "Irreducibly Human",
+            "segment": "Try This",
+            "command": "Explain why a 3D face scan is harder to fool than a 2D photo match, and what trade-off a phone makes when it sets its unlock threshold.",
+            "runningText": "paste this into Claude…",
+            "folderLabel": "@HumanitariansAI",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-11-15T22:59:01.860662+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 10,
+      "actual_duration_s": 11.67,
+      "audio_file": "mp3/beat-B06.mp3",
+      "render_duration_s": 11.708333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B06.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk916",
+        "at": "2026-11-15T17:01:37"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "OUTRO",
+      "narration_text": "Your Face, as Numbers. At Humanitarians A I.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro916",
+          "props": {
+            "title": "Your Face, as Numbers",
+            "slug": "face-unlock",
+            "handle": "@HumanitariansAI",
+            "subline": "Narrated by Kokoro (Bella) — a synthetic voice."
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-11-15T22:59:42.045647+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 3,
+      "actual_duration_s": 3.18,
+      "audio_file": "mp3/beat-B07.mp3",
+      "render_duration_s": 3.2083333333333335,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B07.mp4",
+        "filled_by": "remotion:ClaudeTitleOutro916",
+        "at": "2026-11-15T17:01:37"
+      }
+    }
+  ]
+}
