@@ -1,0 +1,423 @@
+{
+  "metadata": {
+    "title": "One Website, Millions of Users",
+    "slug": "website-load-balancing",
+    "topic": "Irreducibly Human",
+    "register": "Plain",
+    "brand": "claude-hai",
+    "kind": "stem-explainer",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "greeting": "Ciao, HAI",
+    "folderLabel": "@HumanitariansAI",
+    "presenter": "Maitri",
+    "audience": "General audience, no engineering background",
+    "required_intro": "Hi, I am Maitri and this video is about how one website handles millions of users.",
+    "ai_disclosure": "Narration is Kokoro af_bella (Bella), a local synthetic voice.",
+    "aspects": [
+      "16:9",
+      "9:16"
+    ],
+    "build": {
+      "at": "2026-11-15T16:22:11",
+      "cut": "master",
+      "filled": 9,
+      "of": 9,
+      "slates": [],
+      "skin_warnings": []
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "B00",
+      "act": "ASK",
+      "narration_text": "Hi, I am Maitri and this video is about how one website handles millions of users. One computer can't do it. So what do big sites do?",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Ciao, HAI",
+            "topic": "Irreducibly Human",
+            "segment": "System Design",
+            "command": "How does one website handle millions of users at once?",
+            "runningText": "sharing the load…",
+            "folderLabel": "@HumanitariansAI",
+            "output": [
+              "one server: crashes",
+              "many servers + a load balancer: holds"
+            ]
+          },
+          "rendered": {
+            "out": "media/B00.mp4",
+            "at": "2026-11-15T22:04:12.897889+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 9,
+      "actual_duration_s": 8.68,
+      "audio_file": "mp3/beat-B00.mp3",
+      "render_duration_s": 8.708333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B00.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-11-15T16:22:11"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "PROBLEM",
+      "narration_text": "One server can only handle so many requests. Overload it and it slows down, then crashes. And because it's the only one, the whole site goes down with it.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt",
+          "props": {
+            "header": "One server",
+            "subheader": "· the problem",
+            "rows": [
+              {
+                "tag": "LIMITS",
+                "text": "only so much CPU, memory and network"
+              },
+              {
+                "tag": "OVERLOAD",
+                "text": "slows down, then crashes",
+                "emphasis": true
+              },
+              {
+                "tag": "RISK",
+                "text": "single point of failure: it breaks, all stops"
+              }
+            ],
+            "footer": "Every visitor hits the same machine",
+            "sparkLine": "One box, one weak spot."
+          },
+          "rendered": {
+            "out": "media/B01.mp4",
+            "at": "2026-11-15T22:06:08.668515+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 10,
+      "actual_duration_s": 9.83,
+      "audio_file": "mp3/beat-B01.mp3",
+      "render_duration_s": 9.833333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B01.mp4",
+        "filled_by": "remotion:LessonExcerpt",
+        "at": "2026-11-15T16:22:11"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "SCALE OUT",
+      "narration_text": "The fix is to scale out, not up. A bigger computer has a ceiling, and it's expensive. Instead, run many ordinary servers with the same app.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt",
+          "props": {
+            "header": "Scale out, not up",
+            "subheader": "· two ways to grow",
+            "rows": [
+              {
+                "tag": "SCALE UP",
+                "text": "one bigger computer · has a ceiling"
+              },
+              {
+                "tag": "SCALE OUT",
+                "text": "many ordinary servers, same app",
+                "emphasis": true
+              }
+            ],
+            "footer": "Scaling out is called horizontal scaling",
+            "sparkLine": "More boxes, not bigger ones."
+          },
+          "rendered": {
+            "out": "media/B02.mp4",
+            "at": "2026-11-15T22:07:58.241981+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 9,
+      "actual_duration_s": 9.28,
+      "audio_file": "mp3/beat-B02.mp3",
+      "render_duration_s": 9.291666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B02.mp4",
+        "filled_by": "remotion:LessonExcerpt",
+        "at": "2026-11-15T16:22:11"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "BALANCER",
+      "narration_text": "A load balancer sits in front, like a traffic officer. Users only ever reach it, and it sends each request to a server with room. To you, it still looks like one website.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "AgentToolLoop",
+          "props": {
+            "stages": [
+              "USERS",
+              "LOAD BALANCER",
+              "SERVER POOL"
+            ],
+            "executeIndex": 1,
+            "loopBack": false,
+            "ports": [],
+            "sparkLine": "A traffic officer for requests."
+          },
+          "rendered": {
+            "out": "media/B03.mp4",
+            "at": "2026-11-15T22:09:33.027010+00:00"
+          }
+        },
+        "show": [
+          {
+            "at": 0.05,
+            "event": "users → balancer → pool"
+          }
+        ]
+      },
+      "estimated_duration_s": 11,
+      "actual_duration_s": 11.01,
+      "audio_file": "mp3/beat-B03.mp3",
+      "render_duration_s": 11.041666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B03.mp4",
+        "filled_by": "remotion:AgentToolLoop",
+        "at": "2026-11-15T16:22:11"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "METHODS",
+      "narration_text": "It picks a server in simple ways. Round robin takes turns. Least connections picks the least busy server. And IP hash keeps you on the same server, so it remembers your session.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt",
+          "props": {
+            "header": "Picking a server",
+            "subheader": "· common methods",
+            "rows": [
+              {
+                "tag": "ROUND ROBIN",
+                "text": "1, then 2, then 3, then back to 1",
+                "emphasis": true
+              },
+              {
+                "tag": "LEAST CONN.",
+                "text": "the server that is least busy now"
+              },
+              {
+                "tag": "IP HASH",
+                "text": "same user, same server (sticky sessions)"
+              }
+            ],
+            "footer": "Round robin suits similar requests; least connections suits uneven ones",
+            "sparkLine": "Take turns, or pick the quietest."
+          },
+          "rendered": {
+            "out": "media/B04.mp4",
+            "at": "2026-11-15T22:11:12.212410+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 11,
+      "actual_duration_s": 11.56,
+      "audio_file": "mp3/beat-B04.mp3",
+      "render_duration_s": 11.583333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B04.mp4",
+        "filled_by": "remotion:LessonExcerpt",
+        "at": "2026-11-15T16:22:11"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "RESILIENCE",
+      "narration_text": "It checks every server every few seconds. If one dies, traffic goes only to the healthy ones. Autoscaling adds servers when traffic spikes, and big sites run in many regions, close to you.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt",
+          "props": {
+            "header": "Staying up",
+            "subheader": "· failures and spikes",
+            "rows": [
+              {
+                "tag": "HEALTH CHECK",
+                "text": "dead server removed from the pool",
+                "emphasis": true
+              },
+              {
+                "tag": "AUTOSCALING",
+                "text": "more servers on a spike, fewer after"
+              },
+              {
+                "tag": "REGIONS",
+                "text": "nearest healthy region serves you"
+              },
+              {
+                "tag": "CDN",
+                "text": "images and video from caches near you"
+              }
+            ],
+            "footer": "One failure doesn't take the site down",
+            "sparkLine": "Users never see the crash."
+          },
+          "rendered": {
+            "out": "media/B05.mp4",
+            "at": "2026-11-15T22:12:52.171410+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 14,
+      "actual_duration_s": 12.42,
+      "audio_file": "mp3/beat-B05.mp3",
+      "render_duration_s": 12.458333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B05.mp4",
+        "filled_by": "remotion:LessonExcerpt",
+        "at": "2026-11-15T16:22:11"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "CATCH",
+      "narration_text": "The catch: the load balancer needs a backup, or it becomes the new single point of failure. And more web servers won't help if they all wait on one database.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "LessonExcerpt",
+          "props": {
+            "header": "The catch",
+            "subheader": "· said plainly",
+            "rows": [
+              {
+                "tag": "BALANCER",
+                "text": "needs a backup · run in pairs or managed",
+                "emphasis": true
+              },
+              {
+                "tag": "DATABASE",
+                "text": "often the next bottleneck"
+              }
+            ],
+            "footer": "Adding web servers can't fix a slow database",
+            "sparkLine": "Move the weak spot, don't hide it."
+          },
+          "rendered": {
+            "out": "media/B06.mp4",
+            "at": "2026-11-15T22:14:28.267119+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 10,
+      "actual_duration_s": 9.83,
+      "audio_file": "mp3/beat-B06.mp3",
+      "render_duration_s": 9.833333333333334,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B06.mp4",
+        "filled_by": "remotion:LessonExcerpt",
+        "at": "2026-11-15T16:22:11"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "HANDOFF",
+      "narration_text": "Your turn. Paste this into Claude: explain how you would design a website to survive ten times normal traffic for one hour, and name the first thing that would break.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "type-on",
+        "remotion": {
+          "pattern": "ClaudeComposerAsk",
+          "props": {
+            "greeting": "Your turn.",
+            "topic": "Irreducibly Human",
+            "segment": "Try This",
+            "command": "Explain how you would design a website to survive 10× normal traffic for one hour, and name the first thing that would break.",
+            "runningText": "paste this into Claude…",
+            "folderLabel": "@HumanitariansAI",
+            "output": []
+          },
+          "rendered": {
+            "out": "media/B07.mp4",
+            "at": "2026-11-15T22:18:11.720565+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 10,
+      "actual_duration_s": 10.37,
+      "audio_file": "mp3/beat-B07.mp3",
+      "render_duration_s": 10.375,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B07.mp4",
+        "filled_by": "remotion:ClaudeComposerAsk",
+        "at": "2026-11-15T16:22:11"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "OUTRO",
+      "narration_text": "One Website, Millions of Users. At Humanitarians A I.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "remotion",
+        "motion": "illustrate",
+        "remotion": {
+          "pattern": "ClaudeTitleOutro",
+          "props": {
+            "title": "One Website, Millions of Users",
+            "slug": "website-load-balancing",
+            "handle": "@HumanitariansAI",
+            "subline": "Narrated by Kokoro (Bella) — a synthetic voice."
+          },
+          "rendered": {
+            "out": "media/B08.mp4",
+            "at": "2026-11-15T22:19:16.163392+00:00"
+          }
+        }
+      },
+      "estimated_duration_s": 4,
+      "actual_duration_s": 3.93,
+      "audio_file": "mp3/beat-B08.mp3",
+      "render_duration_s": 3.9583333333333335,
+      "build": {
+        "status": "VIDEO",
+        "src": "media\\B08.mp4",
+        "filled_by": "remotion:ClaudeTitleOutro",
+        "at": "2026-11-15T16:22:11"
+      }
+    }
+  ]
+}
